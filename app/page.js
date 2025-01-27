@@ -30,7 +30,7 @@ export default function Main() {
     },
     {
       title: "Genshin Impact",
-      src: "/static/images/gi.png",
+      src: "/static/images/gi2.jpg",
       image_alt: "Sofi",
       link: "https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481"
     },
