@@ -19,26 +19,44 @@ export default function Main() {
     {
       title: "Karuta",
       src: "/static/images/karuta.png",
-      image_alt: "Sofi",
+      image_alt: "Karuta",
       link: "https://top.gg/bot/646937666251915264/vote"
+    },
+    {
+      title: "Mazoku Legacy",
+      src: "/static/images/mazoku.png",
+      image_alt: "Mazoku",
+      link: "https://top.gg/bot/1242388858897956906/vote"
+    },
+    {
+      title: "Lumine",
+      src: "/static/images/lumine.png",
+      image_alt: "Lumine",
+      link: "https://top.gg/bot/1261042392413372520/vote"
     },
     {
       title: "Coins",
       src: "/static/images/bot-discord-image.png",
-      image_alt: "Sofi",
+      image_alt: "COINS",
       link: "https://bot-hosting.net/panel/earn"
     },
     {
       title: "Genshin Impact",
       src: "/static/images/gi2.jpg",
-      image_alt: "Sofi",
+      image_alt: "GI",
       link: "https://act.hoyolab.com/ys/event/signin-sea-v3/index.html?act_id=e202102251931481"
     },
     {
       title: "Honkai Star Rail",
       src: "/static/images/hsr.png",
-      image_alt: "Sofi",
+      image_alt: "HSR",
       link: "https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e202303301540311"
+    },
+    {
+      title: "My Discord Server",
+      src: "/static/images/pfp.jpg",
+      image_alt: "Profile Pic",
+      link: "https://discord.gg/HgXNs4p5cx"
     },
   ];
   return (
