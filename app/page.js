@@ -29,9 +29,9 @@ export default function Main() {
       link: "https://top.gg/bot/1242388858897956906/vote"
     },
     {
-      title: "Lumine",
+      title: "Lumina",
       src: "/static/images/lumine.png",
-      image_alt: "Lumine",
+      image_alt: "Lumina",
       link: "https://top.gg/bot/1261042392413372520/vote"
     },
     {
