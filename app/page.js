@@ -6,13 +6,13 @@ export default function Main() {
   const Websites = [
     {
       title: "Sofi Bump",
-      src: "/static/images/sofi.jpeg",
+      src: "/static/images/sofi_gif.gif",
       image_alt: "Sofi",
       link: "https://sofi.gg/bump"
     },
     {
       title: "Sofi",
-      src: "/static/images/sofi.jpeg",
+      src: "/static/images/sofi_gif.gif",
       image_alt: "Sofi",
       link: "https://top.gg/bot/853629533855809596/vote"
     },
@@ -33,6 +33,12 @@ export default function Main() {
       src: "/static/images/lumine.png",
       image_alt: "Lumina",
       link: "https://top.gg/bot/1261042392413372520/vote"
+    },
+    {
+      title: "Index",
+      src: "/static/images/index_gif.gif",
+      image_alt: "Index",
+      link: "https://top.gg/bot/931821030996066304/vote"
     },
     {
       title: "Coins",
