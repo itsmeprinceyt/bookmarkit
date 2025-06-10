@@ -1,6 +1,11 @@
 # About  
 This website is made for my personal use to store certain bookmarks which I frequently access. It's so pain in the ass to find and open those tabs so I figured I'd rather make a website that holds all my important most used bookmarks.
 
+# To Add New Bookmarks or edit
+- Open `@/utils/websites.js`
+- Add/Modify/Delete the website data along with required data such as top.gg vote, logo, text, image alt.
+- Save and thats it!
+
 ## Future Development
 I will make a small full-stack project in which you can
 - Create your own account
