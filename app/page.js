@@ -20,6 +20,7 @@ export default function Main() {
                 width={200}
                 height={200}
                 alt={website.image_alt}
+                loading="lazy"
               />
               <Link href={website.link} target="_blank">
                 <button className="bg-gradient-to-r from-black to-black/80 text-white text-xs p-3 rounded-xl shadow-xl shadow-black/30 hover:scale-105 transition-all ease-in-out w-[90px]">{website.title}</button>
