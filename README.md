@@ -1,2 +1,1 @@
-# BETTER VERSION
-https://github.com/itsmeprinceyt/discord_shortcuts_nextjs
+This is the old version
