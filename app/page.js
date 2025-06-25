@@ -14,26 +14,15 @@ export default function Main() {
               key={index}
               className="bg-white flex justify-around items-center gap-5 text-black rounded-xl p-4 w-[250px] h-[130px]"
             >
-              {website === "Sofi Bump" || "Sofi" || "Index" ?
-                <Image
-                  unoptimized
-                  className="w-[100px] rounded-xl shadow-xl shadow-black/30"
-                  src={website.src}
-                  width={200}
-                  height={200}
-                  alt={website.image_alt}
-                  loading="lazy"
-                />
-                :
-                <Image
-                  className="w-[100px] rounded-xl shadow-xl shadow-black/30"
-                  src={website.src}
-                  width={200}
-                  height={200}
-                  alt={website.image_alt}
-                  loading="lazy"
-                />
-              }
+              <Image
+                unoptimized={["Sofi Bump", "Sofi", "Index"].includes(website.title)}
+                className="w-[100px] rounded-xl shadow-xl shadow-black/30"
+                src={website.src}
+                width={200}
+                height={200}
+                alt={website.image_alt}
+                loading="lazy"
+              />
               <Link href={website.link} target="_blank">
                 <button className="bg-gradient-to-r from-black to-black/80 text-white text-xs p-3 rounded-xl shadow-xl shadow-black/30 hover:scale-105 transition-all ease-in-out w-[90px]">{website.title}</button>
               </Link>
