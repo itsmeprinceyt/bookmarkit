@@ -25,7 +25,7 @@ export const Websites = [
     },
     {
         title: "Lumina",
-        src: "/static/images/lumine.png",
+        src: "/static/images/lumina.png",
         image_alt: "Lumina",
         link: "https://top.gg/bot/1261042392413372520/vote"
     },
@@ -52,6 +52,12 @@ export const Websites = [
         src: "/static/images/hsr.png",
         image_alt: "HSR",
         link: "https://act.hoyolab.com/bbs/event/signin/hkrpg/index.html?act_id=e202303301540311"
+    },
+    {
+        title: "My YouTube Channel",
+        src: "/static/images/yt-logo.jpg",
+        image_alt: "YouTube Logo",
+        link: "https://www.youtube.com/@itsmeprinceyt"
     },
     {
         title: "My Discord Server",

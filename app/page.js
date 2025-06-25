@@ -14,14 +14,26 @@ export default function Main() {
               key={index}
               className="bg-white flex justify-around items-center gap-5 text-black rounded-xl p-4 w-[250px] h-[130px]"
             >
-              <Image
-                className="w-[100px] rounded-xl shadow-xl shadow-black/30"
-                src={website.src}
-                width={200}
-                height={200}
-                alt={website.image_alt}
-                loading="lazy"
-              />
+              {website === "Sofi Bump" || "Sofi" || "Index" ?
+                <Image
+                  unoptimized
+                  className="w-[100px] rounded-xl shadow-xl shadow-black/30"
+                  src={website.src}
+                  width={200}
+                  height={200}
+                  alt={website.image_alt}
+                  loading="lazy"
+                />
+                :
+                <Image
+                  className="w-[100px] rounded-xl shadow-xl shadow-black/30"
+                  src={website.src}
+                  width={200}
+                  height={200}
+                  alt={website.image_alt}
+                  loading="lazy"
+                />
+              }
               <Link href={website.link} target="_blank">
                 <button className="bg-gradient-to-r from-black to-black/80 text-white text-xs p-3 rounded-xl shadow-xl shadow-black/30 hover:scale-105 transition-all ease-in-out w-[90px]">{website.title}</button>
               </Link>
@@ -29,16 +41,16 @@ export default function Main() {
           ))}
         </div>
         <div className="text-[10px]">
-        Made by @itsmeprinceyt | &nbsp;
-        <Link className="hover:animate-pulse transition-all ease-in-out" href="https://github.com/itsmeprinceyt" target="_blank">
-        Github
-        </Link>
-        &nbsp; | &nbsp;
-        <Link className="hover:animate-pulse transition-all ease-in-out" href="https://www.youtube.com/@itsmeprinceyt" target="_blank">
-        YouTube
-        </Link>
+          Made by @itsmeprinceyt | &nbsp;
+          <Link className="hover:animate-pulse transition-all ease-in-out" href="https://github.com/itsmeprinceyt" target="_blank">
+            Github
+          </Link>
+          &nbsp; | &nbsp;
+          <Link className="hover:animate-pulse transition-all ease-in-out" href="https://www.youtube.com/@itsmeprinceyt" target="_blank">
+            YouTube
+          </Link>
 
-        
+
         </div>
         <BorderBeam />
       </div>
