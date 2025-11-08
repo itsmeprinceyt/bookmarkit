@@ -36,6 +36,12 @@ export const Websites = [
         link: "https://top.gg/bot/1312830013573169252/vote"
     },
     {
+        title: "Luvi",
+        src: "/static/images/luvi.png",
+        image_alt: "Luvi Logo",
+        link: "https://top.gg/bot/1269481871021047891/vote"
+    },
+    {
         title: "Index",
         src: "/static/images/index_gif.gif",
         image_alt: "Index",
