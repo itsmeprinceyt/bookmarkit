@@ -30,10 +30,16 @@ export const Websites = [
         link: "https://top.gg/bot/1261042392413372520/vote"
     },
     {
-        title: "Nai",
+        title: "Nai - Top.GG",
         src: "/static/images/nai.png",
         image_alt: "Nai Logo",
         link: "https://top.gg/bot/1312830013573169252/vote"
+    },
+    {
+        title: "Nai - Rank.Top",
+        src: "/static/images/nai.png",
+        image_alt: "Nai Logo",
+        link: "https://rank.top/bot/1312830013573169252/vote"
     },
     {
         title: "Luvi",
