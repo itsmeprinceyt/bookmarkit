@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 export default function Main() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [toggleMap, setToggleMap] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const saved = localStorage.getItem("websiteToggles");
@@ -19,6 +20,7 @@ export default function Main() {
       Websites.forEach((_, i) => { defaults[i] = true; });
       setToggleMap(defaults);
     }
+    setIsLoading(false);
   }, []);
 
   const handleToggle = (index) => {
@@ -48,29 +50,36 @@ export default function Main() {
 
         <h1 className="font-semibold">Bookmark Shortcuts</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center gap-5">
-          {visibleWebsites.map((website, index) => (
-            <div
-              key={index}
-              className="bg-white flex justify-around items-center gap-5 text-black rounded-xl p-4 w-[250px] h-[130px]"
-            >
-              <Image
-                unoptimized={["Sofi Bump", "Sofi", "Index"].includes(website.title)}
-                className="w-[100px] rounded-xl shadow-xl shadow-black/30"
-                src={website.src}
-                width={200}
-                height={200}
-                alt={website.image_alt}
-                loading="lazy"
-              />
-              <Link href={website.link} target="_blank">
-                <button className="bg-gradient-to-r from-black to-black/80 text-white text-xs p-3 rounded-xl shadow-xl shadow-black/30 hover:scale-105 transition-all ease-in-out w-[90px]">
-                  {website.title}
-                </button>
-              </Link>
-            </div>
-          ))}
-        </div>
+        {isLoading ? (
+          <div className="flex flex-col justify-center items-center gap-3 py-10 px-16">
+            <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+            <span className="text-white/40 text-xs">Loading bookmarks...</span>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center gap-5">
+            {visibleWebsites.map((website, index) => (
+              <div
+                key={index}
+                className="bg-white flex justify-around items-center gap-5 text-black rounded-xl p-4 w-[250px] h-[130px]"
+              >
+                <Image
+                  unoptimized={["Sofi Bump", "Sofi", "Index"].includes(website.title)}
+                  className="w-[100px] rounded-xl shadow-xl shadow-black/30"
+                  src={website.src}
+                  width={200}
+                  height={200}
+                  alt={website.image_alt}
+                  loading="lazy"
+                />
+                <Link href={website.link} target="_blank">
+                  <button className="bg-gradient-to-r from-black to-black/80 text-white text-xs p-3 rounded-xl shadow-xl shadow-black/30 hover:scale-105 transition-all ease-in-out w-[90px]">
+                    {website.title}
+                  </button>
+                </Link>
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="text-[10px]">
           Made by @itsmeprinceyt | &nbsp;
