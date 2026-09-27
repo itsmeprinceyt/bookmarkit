@@ -54,6 +54,18 @@ export const Websites = [
         link: "https://top.gg/bot/931821030996066304/vote"
     },
     {
+        title: "Yume",
+        src: "/static/images/yume.webp",
+        image_alt: "Yume",
+        link: "https://top.gg/bot/1510875858519330938/vote"
+    },
+    {
+        title: "Yume - Rank.Top",
+        src: "/static/images/yume.webp",
+        image_alt: "Yume",
+        link: "https://rank.top/bot/yume/vote"
+    },
+    {
         title: "Coins",
         src: "/static/images/bot-discord-image.png",
         image_alt: "COINS",
