@@ -170,9 +170,9 @@ export default function Main() {
             <p className="text-white/50 text-[11px] leading-relaxed">
               Your browser blocks multiple tabs by default. Please allow popups for
               this site — click the blocked-popup icon in the address bar and choose
-              <span className="text-white/80"> "Always allow"</span> — then press the button below.
+              <span className="text-white/80"> &ldquo;Always allow&rdquo;</span> — then press the button below.
               <br /><br />
-              <span className="text-white/40">You'll only see this message once.</span>
+              <span className="text-white/40">You&apos;ll only see this message once.</span>
             </p>
 
             <button
