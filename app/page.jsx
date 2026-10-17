@@ -3,7 +3,7 @@ import Image from "next/image.js";
 import Link from "next/link.js";
 import { BorderBeam } from ".//(components)/magicui/border-beam.jsx";
 import { Websites } from '../utils/websites.js';
-import { Settings, X, Save } from "lucide-react";
+import { Settings, X, Save, ExternalLink } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Main() {
@@ -33,11 +33,29 @@ export default function Main() {
     window.location.reload();
   };
 
+  const handleOpenAll = () => {
+    Websites
+      .filter((_, i) => toggleMap[i] !== false)
+      .forEach((website) => {
+        window.open(website.link, "_blank", "noopener,noreferrer");
+      });
+  };
+
   const visibleWebsites = Websites.filter((_, i) => toggleMap[i] !== false);
 
   return (
     <div className="min-h-screen flex justify-center items-center overflow-hidden">
       <div className="mt-12 mb-12 relative bg-black rounded-xl text-white flex flex-col justify-start items-center gap-5 p-5 shadow-xl shadow-white/20">
+
+        {/* Open All Enabled Links */}
+        <button
+          onClick={handleOpenAll}
+          disabled={isLoading}
+          className="absolute top-4 right-12 text-white/60 hover:text-white hover:scale-110 transition-all ease-in-out duration-300 z-10 disabled:opacity-40 disabled:cursor-not-allowed"
+          title="Open all enabled bookmarks"
+        >
+          <ExternalLink size={20} />
+        </button>
 
         {/* Settings Icon */}
         <button
